@@ -35,11 +35,9 @@ ActiveRecord::Schema.define(version: 20150213015404) do
     t.integer  "review_count"
     t.text     "categories",      default: [],              array: true
     t.string   "display_address"
-    t.string   "description"
     t.boolean  "is_closed"
-    t.float    "search_lat"
-    t.float    "search_long"
-    t.integer  "distance_away"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
   end
@@ -50,14 +48,10 @@ ActiveRecord::Schema.define(version: 20150213015404) do
     t.float    "sw_longitude"
     t.float    "ne_latitude"
     t.float    "ne_longitude"
-    t.float    "current_sw_latitude"
-    t.float    "current_sw_longitude"
-    t.float    "current_ne_latitude"
-    t.float    "current_ne_longitude"
-    t.integer  "current_index"
-    t.string   "source_type"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.integer  "current_index", default: 0
+    t.string   "source_type",   default: "yelp"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
 end

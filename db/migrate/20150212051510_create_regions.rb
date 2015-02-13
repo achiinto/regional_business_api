@@ -6,12 +6,8 @@ class CreateRegions < ActiveRecord::Migration
       t.float :sw_longitude
       t.float :ne_latitude
       t.float :ne_longitude
-      t.float :current_sw_latitude
-      t.float :current_sw_longitude
-      t.float :current_ne_latitude
-      t.float :current_ne_longitude
-      t.integer :current_index
-      t.string :source_type
+      t.integer :current_index, default: 0
+      t.string :source_type, default: "yelp"
 
       t.timestamps null: false
     end

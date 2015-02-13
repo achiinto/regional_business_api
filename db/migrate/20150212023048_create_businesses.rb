@@ -9,11 +9,9 @@ class CreateBusinesses < ActiveRecord::Migration
       t.integer :review_count
       t.text :categories, array: true, default: []
       t.string :display_address
-      t.string :description
       t.boolean :is_closed
-      t.float :search_lat
-      t.float :search_long
-      t.integer :distance_away
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps null: false
     end

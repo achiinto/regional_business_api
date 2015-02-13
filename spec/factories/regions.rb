@@ -1,15 +1,11 @@
 FactoryGirl.define do
   factory :region do
-    name "MyString"
-sw_latitude 1.5
-sw_longitude 1.5
-ne_latitude 1.5
-ne_longitude 1.5
-current_latitude 1.5
-current_longitude 1.5
-current_index 1
-source_type "MyString"
-api_count_quota 1
+    name Faker::Name.name
+    sw_latitude Faker::Number.number(7)
+    sw_longitude Faker::Number.number(7)
+    ne_latitude Faker::Number.number(7)
+    ne_longitude Faker::Number.number(7)
+    current_index Faker::Number.number(1)
+    source_type "Yelp"
   end
-
 end
