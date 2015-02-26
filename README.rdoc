@@ -1,28 +1,7 @@
-== README
+== Regional Business API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This early implementation of the Regional Buiness Api is designed to fetch Web API servers for Buiness related data. Given bounding regions to collect the data. The data would be accessible by a RESTful api. 
 
-Things you may want to cover:
+This project is intended by experimental and research purpose. There is no intention for real usage on the code to collect and persist business data from Web API source.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This Readme file would gradually be updated as the Collection and RESTful API functionalities being developed.
