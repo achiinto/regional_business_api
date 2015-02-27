@@ -1,6 +1,6 @@
 class Business < ActiveRecord::Base
   def api_business=(api_business)
-    self.resource_id = api_business.id
+    self.resource_id = "yelp_#{api_business.id}"
     self.name = api_business.name
     self.image_url = api_business.image_url rescue ""
     self.url = api_business.url

@@ -10,7 +10,7 @@ RSpec.describe Business, type: :model do
       it "assigns business api data to the business instance" do
         api_business_data = api_result.businesses.first
         new_subject.api_business = api_business_data
-        expect(new_subject.resource_id).to eq api_business_data.id
+        expect(new_subject.resource_id).to eq "yelp_#{api_business_data.id}"
         expect(new_subject.name).to eq api_business_data.name
         expect(new_subject.image_url).to eq api_business_data.image_url
         expect(new_subject.url).to eq api_business_data.url
